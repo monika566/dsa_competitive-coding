@@ -44,14 +44,14 @@ void inorder(Node* root)
 class Solution {
 public:
     vector<int> inorderTraversal(Node* root) {
-        stack<Node*> stck;
-        while(root || !stck.empty()){
+        stack<Node*> stack;
+        while(root || !stack.empty()){
             while (root) {
-                stck.push(root);
+                stack.push(root);
                 root = root->left;
             }
-            root = stck.top();
-            stck.pop();
+            root = stack.top();
+            stack.pop();
             cout<<root->data<<" ";
             root = root->right;
         }
