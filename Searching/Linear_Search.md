@@ -24,7 +24,7 @@ int main(){
     cin>>size;
     int array[size];
     cout<<"Enter elements:"<<endl;
-    for(int i=0;i<size;i++){
+    for(int i=0;i<size-1;i++){
         cin>>array[i];
     }
     cout<<"Enter element to search:"<<endl;
